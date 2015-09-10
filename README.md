@@ -1,1 +1,1 @@
-# zaryad.github.io – JS SPA (JavaScript Single Page Applications)
+#JS SPA (JavaScript Single Page Applications)
