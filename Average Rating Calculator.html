@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+  <title>Калькулятор среднего рейтинга / Average Rating Calculator</title>
+   <style type="text/css">
+body {text-align:center; line-height:1.5}
+span {font-size:xx-large; font-weight:bold}
+#rating {color:red}
+   </style>
+    <script type="text/javascript">
+function AverageRating() {
+var a=document.getElementById('r1').value;
+var b=document.getElementById('r2').value;
+var c=document.getElementById('r3').value;
+var d=document.getElementById('r4').value;
+var e=document.getElementById('r5').value;
+var f=document.getElementById('r6').value;
+var g=document.getElementById('r7').value;
+var h=document.getElementById('r8').value;
+var i=document.getElementById('r9').value;
+var j=document.getElementById('r10').value;
+var t=(a*1)+(b*1)+(c*1)+(d*1)+(e*1)+(f*1)+(g*1)+(h*1)+(i*1)+(j*1);
+var ar=((a*1)+(b*2)+(c*3)+(d*4)+(e*5)+(f*6)+(g*7)+(h*8)+(i*9)+(j*10))/t;
+document.getElementById('rating').innerHTML=ar.toFixed(2);
+document.getElementById('total').innerHTML='('+t+')';
+}
+    </script>
+</head>
+<body>
+1 – <input id="r1" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+2 – <input id="r2" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+3 – <input id="r3" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+4 – <input id="r4" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+5 – <input id="r5" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+6 – <input id="r6" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+7 – <input id="r7" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+8 – <input id="r8" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+9 – <input id="r9" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+10 – <input id="r10" type="number" size="10" placeholder="0" min="0" onkeyup="AverageRating();" onchange="AverageRating();"><br>
+<button onclick="AverageRating();">Click the button</button><br>
+<span id="rating">0</span>
+<span id="total">(0)</span>
+</body>
+</html>
