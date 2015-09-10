@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+  <title>Простой калькулятор / Simple Calculator</title>
+   <style type="text/css">
+body {line-height:1.5}
+input {font-size:large}
+#b {text-align:right}
+   </style>
+</head>
+<body>
+<input id="a" type="text" onkeyup="document.getElementById('b').value=('= ' + eval(this.value));" onchange="document.getElementById('b').value=('= ' + eval(this.value));" autofocus><br>
+<input id="b" type="text" disabled><br>
+<button onclick="document.getElementById('b').value=('= ' + eval(document.getElementById('a').value));">Calculate</button>
+</body>
+</html>
